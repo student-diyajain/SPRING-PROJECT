@@ -1,0 +1,30 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+<!--   for servlet-context -->
+  <context-param>
+  <param-name>appname</param-name>
+  <param-value>feedback</param-value>
+  </context-param>
+  
+<!--   for servlet-config -->
+  <servlet>
+     <servlet-name>Servlet1</servlet-name>
+     <servlet-class>com.servlet.Request1Servlet</servlet-class>
+     <init-param>
+      <param-name>username</param-name>
+      <param-value>diyajain</param-value>
+     </init-param>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Servlet1</servlet-name>
+     <url-pattern>/Servlet1</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+</web-app>
